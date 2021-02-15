@@ -26,9 +26,9 @@ $tc->exit_code_ok
 my $ftc = tc($sparring, qw{ <channel=stderr> <exit=1> [stuff]});
 isa_ok $ftc, 'Test::CLI';
 
-$ftc->run_fails_ok;
-$ftc->run_fails_ok({stuff => 'bar'});
-$ftc->run_fails_ok({stuff => 'bar'}, 'run false command with parameter');
+$ftc->run_failure_ok;
+$ftc->run_failure_ok({stuff => 'bar'});
+$ftc->run_failure_ok({stuff => 'bar'}, 'run false command with parameter');
 $ftc->exit_code_is(1);
 $ftc->exit_code_failure_ok;
 
