@@ -38,7 +38,7 @@ sub run_ok ($self, $bindopts = {}, $message = undef) {
    $self->ok($message);
 }
 
-sub run_fails_ok ($self, $bindopts = {}, $message = undef) {
+sub run_failure_ok ($self, $bindopts = {}, $message = undef) {
    $self->run($bindopts->%*);
    $self->failure_ok($message);
 }
