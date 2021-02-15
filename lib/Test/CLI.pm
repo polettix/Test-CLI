@@ -30,7 +30,7 @@ sub verbose ($self, @new) {
    $self->{verbose} = $new[0];
    return $self;
 }
-sub message ($self, $pref) { $pref . ' ' . $self->last_command }
+sub _message ($self, $pref) { $pref . ' ' . $self->last_command }
 
 # test interface
 sub run_ok ($self, $bindopts = {}, $message = undef) {
@@ -64,7 +64,7 @@ sub ok ($self, $message = undef) {
 sub failure_ok ($self, $message = undef) {
    my $outcome = $self->last_run->failure;
    my $c       = context();
-   $c->ok($outcome, $message // $self->message('(failure on)'));
+   $c->ok($outcome, $message // $self->_message('(failure on)'));
    $c->release;
    $self->dump_diag if (!$outcome) && $self->verbose;
    return $self;
@@ -100,7 +100,7 @@ for my $case (
       'timeout',
       qw<
         timeout
-        in_time timed_out_ok
+        in_time_ok timed_out_ok
         timeout_is timeout_isnt
         >
    ],
@@ -118,7 +118,7 @@ for my $case (
       return $self->_ok(
          $got == $exp,
          "$name: got $got, expected $exp",
-         $message // $self->message("($name is $exp on)"),
+         $message // $self->_message("($name is $exp on)"),
       );
    };
 
@@ -127,7 +127,7 @@ for my $case (
       return $self->_ok(
          $got != $nexp,
          "$name: did not expect $nexp",
-         $message // $self->message("($name is not $nexp on)"),
+         $message // $self->_message("($name is not $nexp on)"),
       );
    };
 } ## end for my $case (['exit code'...])
@@ -146,7 +146,7 @@ for my $case (
       return $self->_ok(
          $got eq $exp,
          "$name: got <$got>, expected <$exp>",
-         $message // $self->message("($name is <$exp> on)"),
+         $message // $self->_message("($name is <$exp> on)"),
       );
    };
 
@@ -155,7 +155,7 @@ for my $case (
       return $self->_ok(
          $got ne $nexp,
          "$name: did not expect <$nexp>",
-         $message // $self->message("($name is not <$nexp> on)"),
+         $message // $self->_message("($name is not <$nexp> on)"),
       );
    };
 
@@ -165,7 +165,7 @@ for my $case (
       return $self->_ok(
          $outcome,
          "$name: did not match $regex",
-         $message // $self->message("($name match $regex on)"),
+         $message // $self->_message("($name match $regex on)"),
       );
    };
 
@@ -175,7 +175,7 @@ for my $case (
       return $self->_ok(
          $outcome,
          "$name: unepected match of $regex",
-         $message // $self->message("($name does not match $regex on)"),
+         $message // $self->_message("($name does not match $regex on)"),
       );
    };
 } ## end for my $case ([...])
