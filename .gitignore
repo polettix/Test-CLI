@@ -1,0 +1,7 @@
+*.swp
+/local/
+/tmp/
+/dibs/
+/.build/
+/Test-CLI-*.tar.gz
+/Test-CLI-*/
