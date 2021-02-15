@@ -1,0 +1,474 @@
+# carton snapshot format: version 1.0
+DISTRIBUTIONS
+  Command-Template-0.001
+    pathname: P/PO/POLETTIX/Command-Template-0.001.tar.gz
+    provides:
+      Command::Template 0.001
+      Command::Template::Instance 0.001
+      Command::Template::Runner 0.001
+      Command::Template::Runner::Record 0.001
+    requirements:
+      IPC::Run 20200505.0
+      Module::Build::Tiny 0.034
+      perl 5.024000
+  Devel-Symdump-2.18
+    pathname: A/AN/ANDK/Devel-Symdump-2.18.tar.gz
+    provides:
+      Devel::Symdump 2.18
+      Devel::Symdump::Export undef
+    requirements:
+      Compress::Zlib 0
+      ExtUtils::MakeMaker 0
+      Test::More 0
+      perl 5.004
+  ExtUtils-Config-0.008
+    pathname: L/LE/LEONT/ExtUtils-Config-0.008.tar.gz
+    provides:
+      ExtUtils::Config 0.008
+    requirements:
+      Data::Dumper 0
+      ExtUtils::MakeMaker 6.30
+      strict 0
+      warnings 0
+  ExtUtils-Helpers-0.026
+    pathname: L/LE/LEONT/ExtUtils-Helpers-0.026.tar.gz
+    provides:
+      ExtUtils::Helpers 0.026
+      ExtUtils::Helpers::Unix 0.026
+      ExtUtils::Helpers::VMS 0.026
+      ExtUtils::Helpers::Windows 0.026
+    requirements:
+      Carp 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      File::Basename 0
+      File::Copy 0
+      File::Spec::Functions 0
+      Text::ParseWords 3.24
+      perl 5.006
+      strict 0
+      warnings 0
+  ExtUtils-InstallPaths-0.012
+    pathname: L/LE/LEONT/ExtUtils-InstallPaths-0.012.tar.gz
+    provides:
+      ExtUtils::InstallPaths 0.012
+    requirements:
+      Carp 0
+      ExtUtils::Config 0.002
+      ExtUtils::MakeMaker 0
+      File::Spec 0
+      perl 5.006
+      strict 0
+      warnings 0
+  IPC-Run-20200505.0
+    pathname: T/TO/TODDR/IPC-Run-20200505.0.tar.gz
+    provides:
+      IPC::Run 20200505.0
+      IPC::Run::Debug 20200505.0
+      IPC::Run::IO 20200505.0
+      IPC::Run::Timer 20200505.0
+      IPC::Run::Win32Helper 20200505.0
+      IPC::Run::Win32IO 20200505.0
+      IPC::Run::Win32Pump 20200505.0
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::More 0.47
+  Importer-0.026
+    pathname: E/EX/EXODIST/Importer-0.026.tar.gz
+    provides:
+      Importer 0.026
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5.008001
+  Module-Build-Tiny-0.039
+    pathname: L/LE/LEONT/Module-Build-Tiny-0.039.tar.gz
+    provides:
+      Module::Build::Tiny 0.039
+    requirements:
+      CPAN::Meta 0
+      DynaLoader 0
+      Exporter 5.57
+      ExtUtils::CBuilder 0
+      ExtUtils::Config 0.003
+      ExtUtils::Helpers 0.020
+      ExtUtils::Install 0
+      ExtUtils::InstallPaths 0.002
+      ExtUtils::ParseXS 0
+      File::Basename 0
+      File::Find 0
+      File::Path 0
+      File::Spec::Functions 0
+      Getopt::Long 2.36
+      JSON::PP 2
+      Pod::Man 0
+      TAP::Harness::Env 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Module-Pluggable-5.2
+    pathname: S/SI/SIMONW/Module-Pluggable-5.2.tar.gz
+    provides:
+      Devel::InnerPackage 0.4
+      Module::Pluggable 5.2
+      Module::Pluggable::Object 5.2
+    requirements:
+      Exporter 5.57
+      ExtUtils::MakeMaker 0
+      File::Basename 0
+      File::Find 0
+      File::Spec 3.00
+      File::Spec::Functions 0
+      if 0
+      perl 5.00503
+      strict 0
+  Path-Tiny-0.118
+    pathname: D/DA/DAGOLDEN/Path-Tiny-0.118.tar.gz
+    provides:
+      Path::Tiny 0.118
+      Path::Tiny::Error 0.118
+    requirements:
+      Carp 0
+      Cwd 0
+      Digest 1.03
+      Digest::SHA 5.45
+      Encode 0
+      Exporter 5.57
+      ExtUtils::MakeMaker 6.17
+      Fcntl 0
+      File::Copy 0
+      File::Glob 0
+      File::Path 2.07
+      File::Spec 0.86
+      File::Temp 0.19
+      File::stat 0
+      constant 0
+      overload 0
+      perl 5.008001
+      strict 0
+      warnings 0
+      warnings::register 0
+  Pod-Coverage-0.23
+    pathname: R/RC/RCLAMP/Pod-Coverage-0.23.tar.gz
+    provides:
+      Pod::Coverage 0.23
+      Pod::Coverage::CountParents undef
+      Pod::Coverage::ExportOnly undef
+      Pod::Coverage::Extractor 0.23
+      Pod::Coverage::Overloader undef
+    requirements:
+      Devel::Symdump 2.01
+      ExtUtils::MakeMaker 0
+      Pod::Find 0.21
+      Pod::Parser 1.13
+      Test::More 0
+  Scope-Guard-0.21
+    pathname: C/CH/CHOCOLATE/Scope-Guard-0.21.tar.gz
+    provides:
+      Scope::Guard 0.21
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::More 0
+      perl 5.006001
+  Sub-Info-0.002
+    pathname: E/EX/EXODIST/Sub-Info-0.002.tar.gz
+    provides:
+      Sub::Info 0.002
+    requirements:
+      B 0
+      Carp 0
+      ExtUtils::MakeMaker 0
+      Importer 0.024
+      perl 5.008001
+  Sub-Uplevel-0.2800
+    pathname: D/DA/DAGOLDEN/Sub-Uplevel-0.2800.tar.gz
+    provides:
+      Sub::Uplevel 0.2800
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 6.17
+      constant 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Template-Perlish-1.54
+    pathname: P/PO/POLETTIX/Template-Perlish-1.54.tar.gz
+    provides:
+      Template::Perlish 1.54
+    requirements:
+      Module::Build::Tiny 0.034
+      perl 5.008000
+  Term-Table-0.015
+    pathname: E/EX/EXODIST/Term-Table-0.015.tar.gz
+    provides:
+      Term::Table 0.015
+      Term::Table::Cell 0.015
+      Term::Table::CellStack 0.015
+      Term::Table::HashBase 0.015
+      Term::Table::LineBreak 0.015
+      Term::Table::Spacer 0.015
+      Term::Table::Util 0.015
+    requirements:
+      Carp 0
+      ExtUtils::MakeMaker 0
+      Importer 0.024
+      List::Util 0
+      Scalar::Util 0
+      perl 5.008001
+  Test-Exception-0.43
+    pathname: E/EX/EXODIST/Test-Exception-0.43.tar.gz
+    provides:
+      Test::Exception 0.43
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      Sub::Uplevel 0.18
+      Test::Builder 0.7
+      Test::Builder::Tester 1.07
+      Test::Harness 2.03
+      base 0
+      perl 5.006001
+      strict 0
+      warnings 0
+  Test-Pod-1.52
+    pathname: E/ET/ETHER/Test-Pod-1.52.tar.gz
+    provides:
+      Test::Pod 1.52
+    requirements:
+      ExtUtils::MakeMaker 0
+      File::Find 0
+      Pod::Simple 3.05
+      Test::Builder::Tester 1.02
+      Test::More 0.62
+      perl 5.008
+  Test-Pod-Coverage-1.10
+    pathname: N/NE/NEILB/Test-Pod-Coverage-1.10.tar.gz
+    provides:
+      Test::Pod::Coverage 1.10
+    requirements:
+      ExtUtils::MakeMaker 0
+      Pod::Coverage 0
+      Test::Builder 0
+      perl 5.006
+      strict 0
+      warnings 0
+  Test-Simple-1.302183
+    pathname: E/EX/EXODIST/Test-Simple-1.302183.tar.gz
+    provides:
+      Test2 1.302183
+      Test2::API 1.302183
+      Test2::API::Breakage 1.302183
+      Test2::API::Context 1.302183
+      Test2::API::Instance 1.302183
+      Test2::API::InterceptResult 1.302183
+      Test2::API::InterceptResult::Event 1.302183
+      Test2::API::InterceptResult::Facet 1.302183
+      Test2::API::InterceptResult::Hub 1.302183
+      Test2::API::InterceptResult::Squasher 1.302183
+      Test2::API::Stack 1.302183
+      Test2::Event 1.302183
+      Test2::Event::Bail 1.302183
+      Test2::Event::Diag 1.302183
+      Test2::Event::Encoding 1.302183
+      Test2::Event::Exception 1.302183
+      Test2::Event::Fail 1.302183
+      Test2::Event::Generic 1.302183
+      Test2::Event::Note 1.302183
+      Test2::Event::Ok 1.302183
+      Test2::Event::Pass 1.302183
+      Test2::Event::Plan 1.302183
+      Test2::Event::Skip 1.302183
+      Test2::Event::Subtest 1.302183
+      Test2::Event::TAP::Version 1.302183
+      Test2::Event::V2 1.302183
+      Test2::Event::Waiting 1.302183
+      Test2::EventFacet 1.302183
+      Test2::EventFacet::About 1.302183
+      Test2::EventFacet::Amnesty 1.302183
+      Test2::EventFacet::Assert 1.302183
+      Test2::EventFacet::Control 1.302183
+      Test2::EventFacet::Error 1.302183
+      Test2::EventFacet::Hub 1.302183
+      Test2::EventFacet::Info 1.302183
+      Test2::EventFacet::Info::Table 1.302183
+      Test2::EventFacet::Meta 1.302183
+      Test2::EventFacet::Parent 1.302183
+      Test2::EventFacet::Plan 1.302183
+      Test2::EventFacet::Render 1.302183
+      Test2::EventFacet::Trace 1.302183
+      Test2::Formatter 1.302183
+      Test2::Formatter::TAP 1.302183
+      Test2::Hub 1.302183
+      Test2::Hub::Interceptor 1.302183
+      Test2::Hub::Interceptor::Terminator 1.302183
+      Test2::Hub::Subtest 1.302183
+      Test2::IPC 1.302183
+      Test2::IPC::Driver 1.302183
+      Test2::IPC::Driver::Files 1.302183
+      Test2::Tools::Tiny 1.302183
+      Test2::Util 1.302183
+      Test2::Util::ExternalMeta 1.302183
+      Test2::Util::Facets2Legacy 1.302183
+      Test2::Util::HashBase 1.302183
+      Test2::Util::Trace 1.302183
+      Test::Builder 1.302183
+      Test::Builder::Formatter 1.302183
+      Test::Builder::IO::Scalar 2.114
+      Test::Builder::Module 1.302183
+      Test::Builder::Tester 1.302183
+      Test::Builder::Tester::Color 1.302183
+      Test::Builder::Tester::Tie 1.302183
+      Test::Builder::TodoDiag 1.302183
+      Test::More 1.302183
+      Test::Simple 1.302183
+      Test::Tester 1.302183
+      Test::Tester::Capture 1.302183
+      Test::Tester::CaptureRunner 1.302183
+      Test::Tester::Delegate 1.302183
+      Test::use::ok 1.302183
+      ok 1.302183
+    requirements:
+      ExtUtils::MakeMaker 0
+      File::Spec 0
+      File::Temp 0
+      Scalar::Util 1.13
+      Storable 0
+      perl 5.006002
+      utf8 0
+  Test2-Suite-0.000139
+    pathname: E/EX/EXODIST/Test2-Suite-0.000139.tar.gz
+    provides:
+      Test2::AsyncSubtest 0.000139
+      Test2::AsyncSubtest::Event::Attach 0.000139
+      Test2::AsyncSubtest::Event::Detach 0.000139
+      Test2::AsyncSubtest::Formatter 0.000139
+      Test2::AsyncSubtest::Hub 0.000139
+      Test2::Bundle 0.000139
+      Test2::Bundle::Extended 0.000139
+      Test2::Bundle::More 0.000139
+      Test2::Bundle::Simple 0.000139
+      Test2::Compare 0.000139
+      Test2::Compare::Array 0.000139
+      Test2::Compare::Bag 0.000139
+      Test2::Compare::Base 0.000139
+      Test2::Compare::Bool 0.000139
+      Test2::Compare::Custom 0.000139
+      Test2::Compare::DeepRef 0.000139
+      Test2::Compare::Delta 0.000139
+      Test2::Compare::Event 0.000139
+      Test2::Compare::EventMeta 0.000139
+      Test2::Compare::Float 0.000139
+      Test2::Compare::Hash 0.000139
+      Test2::Compare::Isa 0.000139
+      Test2::Compare::Meta 0.000139
+      Test2::Compare::Negatable 0.000139
+      Test2::Compare::Number 0.000139
+      Test2::Compare::Object 0.000139
+      Test2::Compare::OrderedSubset 0.000139
+      Test2::Compare::Pattern 0.000139
+      Test2::Compare::Ref 0.000139
+      Test2::Compare::Regex 0.000139
+      Test2::Compare::Scalar 0.000139
+      Test2::Compare::Set 0.000139
+      Test2::Compare::String 0.000139
+      Test2::Compare::Undef 0.000139
+      Test2::Compare::Wildcard 0.000139
+      Test2::Manual 0.000139
+      Test2::Manual::Anatomy 0.000139
+      Test2::Manual::Anatomy::API 0.000139
+      Test2::Manual::Anatomy::Context 0.000139
+      Test2::Manual::Anatomy::EndToEnd 0.000139
+      Test2::Manual::Anatomy::Event 0.000139
+      Test2::Manual::Anatomy::Hubs 0.000139
+      Test2::Manual::Anatomy::IPC 0.000139
+      Test2::Manual::Anatomy::Utilities 0.000139
+      Test2::Manual::Concurrency 0.000139
+      Test2::Manual::Contributing 0.000139
+      Test2::Manual::Testing 0.000139
+      Test2::Manual::Testing::Introduction 0.000139
+      Test2::Manual::Testing::Migrating 0.000139
+      Test2::Manual::Testing::Planning 0.000139
+      Test2::Manual::Testing::Todo 0.000139
+      Test2::Manual::Tooling 0.000139
+      Test2::Manual::Tooling::FirstTool 0.000139
+      Test2::Manual::Tooling::Formatter 0.000139
+      Test2::Manual::Tooling::Nesting 0.000139
+      Test2::Manual::Tooling::Plugin::TestExit 0.000139
+      Test2::Manual::Tooling::Plugin::TestingDone 0.000139
+      Test2::Manual::Tooling::Plugin::ToolCompletes 0.000139
+      Test2::Manual::Tooling::Plugin::ToolStarts 0.000139
+      Test2::Manual::Tooling::Subtest 0.000139
+      Test2::Manual::Tooling::TestBuilder 0.000139
+      Test2::Manual::Tooling::Testing 0.000139
+      Test2::Mock 0.000139
+      Test2::Plugin 0.000139
+      Test2::Plugin::BailOnFail 0.000139
+      Test2::Plugin::DieOnFail 0.000139
+      Test2::Plugin::ExitSummary 0.000139
+      Test2::Plugin::SRand 0.000139
+      Test2::Plugin::Times 0.000139
+      Test2::Plugin::UTF8 0.000139
+      Test2::Require 0.000139
+      Test2::Require::AuthorTesting 0.000139
+      Test2::Require::EnvVar 0.000139
+      Test2::Require::Fork 0.000139
+      Test2::Require::Module 0.000139
+      Test2::Require::Perl 0.000139
+      Test2::Require::RealFork 0.000139
+      Test2::Require::Threads 0.000139
+      Test2::Suite 0.000139
+      Test2::Todo 0.000139
+      Test2::Tools 0.000139
+      Test2::Tools::AsyncSubtest 0.000139
+      Test2::Tools::Basic 0.000139
+      Test2::Tools::Class 0.000139
+      Test2::Tools::ClassicCompare 0.000139
+      Test2::Tools::Compare 0.000139
+      Test2::Tools::Defer 0.000139
+      Test2::Tools::Encoding 0.000139
+      Test2::Tools::Event 0.000139
+      Test2::Tools::Exception 0.000139
+      Test2::Tools::Exports 0.000139
+      Test2::Tools::GenTemp 0.000139
+      Test2::Tools::Grab 0.000139
+      Test2::Tools::Mock 0.000139
+      Test2::Tools::Ref 0.000139
+      Test2::Tools::Spec 0.000139
+      Test2::Tools::Subtest 0.000139
+      Test2::Tools::Target 0.000139
+      Test2::Tools::Tester 0.000139
+      Test2::Tools::Warnings 0.000139
+      Test2::Util::Grabber 0.000139
+      Test2::Util::Ref 0.000139
+      Test2::Util::Stash 0.000139
+      Test2::Util::Sub 0.000139
+      Test2::Util::Table 0.000139
+      Test2::Util::Table::Cell 0.000139
+      Test2::Util::Table::LineBreak 0.000139
+      Test2::Util::Term 0.000139
+      Test2::Util::Times 0.000139
+      Test2::V0 0.000139
+      Test2::Workflow 0.000139
+      Test2::Workflow::BlockBase 0.000139
+      Test2::Workflow::Build 0.000139
+      Test2::Workflow::Runner 0.000139
+      Test2::Workflow::Task 0.000139
+      Test2::Workflow::Task::Action 0.000139
+      Test2::Workflow::Task::Group 0.000139
+    requirements:
+      B 0
+      Carp 0
+      Data::Dumper 0
+      Exporter 0
+      ExtUtils::MakeMaker 0
+      Importer 0.024
+      Module::Pluggable 2.7
+      Scalar::Util 0
+      Scope::Guard 0
+      Sub::Info 0.002
+      Term::Table 0.013
+      Test2::API 1.302176
+      Time::HiRes 0
+      overload 0
+      perl 5.008001
+      utf8 0

@@ -1,7 +1,10 @@
 requires 'perl', '5.024000';
+requires 'Command::Template';
+requires 'Test2::Suite';
 
 on test => sub {
    requires 'Path::Tiny',      '0.084';
+   requires 'Test::Exception';
 };
 
 on develop => sub {
