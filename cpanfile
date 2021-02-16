@@ -1,6 +1,6 @@
 requires 'perl', '5.024000';
 requires 'Command::Template';
-requires 'Test2::Suite';
+requires 'Test2::Suite', '0.000139';
 
 on test => sub {
    requires 'Path::Tiny',      '0.084';
